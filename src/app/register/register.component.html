@@ -1,0 +1,128 @@
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+<nav class="navbar navbar-expand-sm bg-light">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="./register">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./register">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./register">Profile</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="./register">Vendor Sheet</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./register">Contact Us</a>
+          </li>
+    </ul>
+  </nav> 
+  <div class="container">
+     
+    
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="./register">Personal Information</a></li>
+        <li><a href="./edu">Educational Information</a></li>
+        <li><a  href="./immigration">Immigration Information</a></li>
+        <li><a data-toggle="tab" href="#menu3">Work Experience</a></li>
+      </ul>
+      <div>
+        <p>
+          <div class="col-xs-4">
+              <label for="ex3">Name</label><br>
+              <input class="form-control" id="ex3" type="text">
+            </div>
+            <br>
+            <div>
+            <label for="ex3">Gender</label><br>
+               <label class="radio-inline">
+               <input type="radio" name="survey" id="Radios1" value="Yes">
+                 Female
+                   </label>
+                  <label class="radio-inline">
+                 
+                    <input type="radio" name="survey" id="Radios2" value="No">
+                 
+                    Male
+                </label><br>
+                </div>
+                <div class="form-check"><br>
+                    <label for="ex">Marital Status</label><br>
+                  <table>
+                    <tr>
+                   <td>Married</td>
+                  <td>  <input type="checkbox" id="checkbox1"  /></td>
+                   </tr>
+                    <tr>
+                      <td>Single</td> 
+                   <td><input type="checkbox"  id="checkbox2" /></td>
+                  
+                    </tr>
+                   <tr>
+                        <td>Divorced  </td>
+                 <td>   <input type="checkbox" id="checkbox3"  /></td>
+                   </tr>
+                  </table>
+                </div><br>
+                <label >Nationality</label>
+                   <div>
+                    <select>
+                      <option *ngFor="let emp of countries">
+                          
+                       {{ emp }}
+                      </option>
+                    </select>
+                    
+                   </div><br>
+                   <div class="container">
+                      <label >Current Address</label>
+                        <div class="form-group">
+                          
+                          <textarea rows="4" cols="50"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div><br>
+                    <div class="container">
+                        <label >Permanent Address</label>
+                          <div class="form-group">
+                            
+                            <textarea rows="4" cols="50"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                      </div><br>
+                      <div>
+                        <label >DOB :</label>
+                        <input id="dob" [(ngModel)]="dateOfBirth" type="date" >
+                        </div>
+                    
+    </div>
+   
+   
+        <a class="nav-link" href="./login">Back</a>
+     
+<p align="right">
+   
+        <a class="nav-link" href="./edu">Save and Continue</a>
+    
+
+</p>
+    
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+   color: blue;
+   text-align: center;
+}
+</style>
+<div class="footer">
+		<p>Add copyright policy</p>
+	</div>

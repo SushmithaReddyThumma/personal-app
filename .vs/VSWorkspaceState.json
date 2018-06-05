@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\e2e",
+    "\\node_modules\\html-webpack-plugin",
+    "\\node_modules\\html-webpack-plugin\\lib",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\vendor"
+  ],
+  "SelectedNode": "\\src\\app\\vendor\\vendor.component.html",
+  "PreviewInSolutionExplorer": false
+}
